@@ -2,3 +2,20 @@
     margin: 0;
     padding: 0;
 }
+.viewBook{
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 5px 20px;
+    font-size: 20px;
+    /* color: white; */
+}
+
+.custom-toggler {
+    border-color: white; /* Changes the border color of the icon */
+  }
+  
+  .custom-toggler-icon {
+    background-image: url("https://icons8.com/icon/17144/xbox-menu"); /* Custom white icon */
+  }
+  
