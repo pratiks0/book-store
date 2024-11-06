@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
-require("./conn/conn")
-const bookRoute = require("./routes/booksRoutes")
+const cors = require("cors");
+require("./conn/conn");
+const bookRoute = require("./routes/booksRoutes");
 app.use(express.json());
+app.use(cors());
 
 app.use("/api/v1", bookRoute);
 

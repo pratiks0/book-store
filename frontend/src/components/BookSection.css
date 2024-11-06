@@ -1,0 +1,104 @@
+/* Container Flexbox */
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between cards */
+    padding: 20px;
+  }
+  
+  /* Book Card Styles */
+  .book-card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    width: 100%;
+    max-width: 200px; /* Limits card width for larger screens */
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Book Image */
+  .book-image {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Text Styles */
+  .book-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin: 10px 0;
+  }
+  
+  .book-author, .book-price {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+  }
+  
+  .book-description {
+    font-size: 0.8rem;
+    color: #d3d3d3;
+    margin: 5px 0;
+  }
+  
+  /* Delete Button */
+  .delete-button {
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .delete-button:hover {
+    background-color: #e04343;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Tablets and larger phones */
+  @media (max-width: 768px) {
+    .book-card {
+      max-width: 180px; /* Slightly smaller cards */
+    }
+    .book-name {
+      font-size: 1rem;
+    }
+    .book-description, .book-author, .book-price {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Small phones */
+  @media (max-width: 480px) {
+    .book-card {
+      max-width: 150px; /* Compact layout for small screens */
+    }
+    .book-name {
+      font-size: 0.95rem;
+    }
+    .book-description, .book-author, .book-price {
+      font-size: 0.8rem;
+    }
+  }
+  
