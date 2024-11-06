@@ -1,21 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.viewBook{
-    outline: none;
-    border: 1px solid white;
-    background-color: transparent;
-    padding: 5px 20px;
-    font-size: 20px;
-    /* color: white; */
+.viewBook {
+  outline: none;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 5px 20px;
+  font-size: 20px;
+  color: white;
 }
 
 .custom-toggler {
-    border-color: white; /* Changes the border color of the icon */
-  }
-  
-  .custom-toggler-icon {
-    background-image: url("https://icons8.com/icon/17144/xbox-menu"); /* Custom white icon */
-  }
-  
+  border-color: white;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

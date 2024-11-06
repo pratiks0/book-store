@@ -1,16 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../App.css"
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-dark">
+      <nav className="navbar navbar-expand-lg bg-dark  border-top">
         <div className="container">
-          <a className="navbar-brand text-white" to="#">
-            Books Store
-          </a>
+          <Link className="navbar-brand text-white border-bottom border-top" to="/">
+            BOOKS STORE
+          </Link>
           <button
-            className="navbar-toggler custom-toggler"
+            className="navbar-toggler custom-toggler border-bottom border-top"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -23,19 +24,19 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active text-white" aria-current="page" to="#">
+                <Link className="nav-link active text-white" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" to="#">
+                <Link className="nav-link text-white" to="/Books">
                   Books
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" to="#">
+                <Link className="nav-link text-white" to="/AddBooks">
                   Add Book
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
