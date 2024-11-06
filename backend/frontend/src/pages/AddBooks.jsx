@@ -16,7 +16,7 @@ const AddBooks = () => {
   const submit = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:1000/api/v1/add", Data)
+      .post(`${window.location.origin}/api/v1/add`, Data)
       .then((res) => alert(res.data.message));
     setData({
       bookname: "",

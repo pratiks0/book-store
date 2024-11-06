@@ -8,7 +8,7 @@ const Books = () => {
   useEffect(() => {
     const fetch = async () => {
       await axios
-        .get("http://localhost:1000/api/v1/getBooks")
+        .get(`${window.location.origin}/api/v1/getBooks`)
         .then((res) => setData(res.data.books));
     };
     fetch();
@@ -16,7 +16,7 @@ const Books = () => {
 
   const deleteBook = async (bookId) => {
     try {
-      await axios.delete(`http://localhost:1000/api/v1/deleteBook/${bookId}`);
+      await axios.delete(`${window.location.origin}/api/v1/deleteBook/${bookId}`);
       setData(Data.filter((item) => item._id !== bookId)); // Update state to remove deleted book
     } catch (error) {
       console.error("Failed to delete book:", error);
