@@ -112,7 +112,7 @@ const AddBooks = () => {
             type="number"
             className="form-control"
             id="exampleFormControlInput5"
-            placeholder="Enter the Prize"
+            placeholder="Enter the Price"
             name="price"
             value={Data.price}
             onChange={change}

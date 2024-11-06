@@ -34,8 +34,8 @@ const Footer = () => {
         </section>
 
         <div className="text-center p-4 bg-dark text-white" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-          © 2021 Copyright:
-          <Link className="text-reset fw-bold text-white" to="https://demo-portfolio-website.vercel.app">Pratik Singh</Link>
+          © 2024 Copyright:
+          <Link className="text-reset fw-bold text-white" style={{textDecoration: 'none'}} to="https://demo-portfolio-website.vercel.app">Pratik Singh</Link>
         </div>
       </footer>
     </div>
